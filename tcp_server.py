@@ -17,7 +17,7 @@ def server():
         response = f"Сервер получил: {data}"
         client_socket.send(response.encode())
 
-        client_socket.close()\
+        client_socket.close()
 
 if __name__ == '__main__':
     server()
