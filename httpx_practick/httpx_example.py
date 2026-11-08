@@ -36,7 +36,7 @@ print(response.url)    # https://jsonplaceholder.typicode.com/todos?userId=1
 print(response.json()) # Фильтрованный список задач
 
 
-files = {"file": ("example.txt", open("example.txt", "rb"))}
+files = {"file": ("example.txt", open("../example.txt", "rb"))}
 response = httpx.post("https://httpbin.org/post", files=files)
 print(response.json())  # Ответ с данными о загруженном файле
 
